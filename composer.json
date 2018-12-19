@@ -1,0 +1,23 @@
+{
+    "name": "cwhsu/design-pattern",
+    "description": "design pattern practice",
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "DesignPattern\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "cwhsu",
+            "email": "cwhsu1984@gmail.com"
+        }
+    ]
+}
