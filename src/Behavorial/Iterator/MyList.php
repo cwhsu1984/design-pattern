@@ -18,11 +18,11 @@ class MyList implements ListInterface
     public function remove(int $pos): void
     {
         if (empty($this->elements)) {
-            throw new \Exception('Remove from an empty list');
+            throw new \UnderflowException();
         }
 
         if (!isset($this->elements[$pos])) {
-            throw new \Exception('Out of boundary');
+            throw new \OutOfBoundsException();
         }
 
         \array_splice($this->elements, $pos, 1);
